@@ -3,104 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funxcum.com - Local Dating & Adult Social Connections</title>
-    <meta name="description" content="Connect with local singles, companions, and personal ads in your area on Funxcum.com. Browse authentic profiles and adult social connections near you.">
+    <title>Funxcum - Local Classifieds & Personals</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="Find local classifieds, personals, dating, and escort-related services in your area.">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" href="/funxcum.png">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
 
-    <!-- Header Section -->
-    <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <img src="/funxcum.png" alt="Funxcum Logo" class="w-8 h-8 rounded-full object-cover border border-rose-500">
-                <span class="text-xl font-bold tracking-wider text-rose-500">Funxcum<span class="text-slate-100">.com</span></span>
-            </div>
-            <nav class="hidden md:flex gap-6 text-sm text-slate-300">
-                <a href="#profiles" class="hover:text-rose-400 transition">Local Profiles</a>
-                <a href="#about" class="hover:text-rose-400 transition">About Us</a>
-                <a href="#safety" class="hover:text-rose-400 transition">Safety & Discretion</a>
-            </nav>
-            <div>
-                <a href="#profiles" class="bg-rose-600 hover:bg-rose-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition shadow-lg shadow-rose-600/30">Browse Local</a>
-            </div>
-        </div>
+    <!-- Search Result Favicon / Brand Logo Tags -->
+    <link rel="icon" type="image/png" sizes="48x48" href="https://funxcum.com/funxcum.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://funxcum.com/funxcum.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #333;
+        }
+        h1 {
+            color: #ff4757;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .category {
+            margin: 15px 0;
+            padding: 15px;
+            background: #2a2a2a;
+            border-left: 4px solid #ff4757;
+            border-radius: 4px;
+        }
+        .category h3 {
+            margin: 0 0 8px 0;
+            color: #ff6b81;
+        }
+        .category p {
+            margin: 0;
+            color: #ccc;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Funxcum™</h1>
+        <p>Local Classifieds, Dating & Personals</p>
     </header>
 
-    <!-- Hero Section -->
-    <main class="flex-grow">
-        <section class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-                Connect with Local <span class="text-rose-500">Singles & Companions</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-                Find real local personal listings, adult social ads, and exciting dating connections right in your neighborhood.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#profiles" class="bg-rose-600 hover:bg-rose-500 text-white font-medium px-8 py-3 rounded-xl shadow-lg transition">View Listings</a>
-                <a href="#safety" class="border border-slate-700 hover:bg-slate-900 text-slate-300 font-medium px-8 py-3 rounded-xl transition">Safety Guidelines</a>
-            </div>
-        </section>
+    <div class="container">
+        <h2>Welcome to Funxcum</h2>
+        <p>Browse through local listings, dating categories, and independent personal ads near you.</p>
 
-        <!-- Dynamic Listings / Posts Section -->
-        <section id="profiles" class="max-w-6xl mx-auto px-4 py-12 border-t border-slate-900">
-            <h2 class="text-2xl font-bold mb-8 text-center md:text-left flex items-center gap-2">
-                <span class="w-3 h-3 bg-rose-500 rounded-full animate-pulse"></span> Featured Local Connections
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Post Card 1 -->
-                <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-rose-500/50 transition">
-                    <div>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="bg-rose-500/10 text-rose-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-rose-500/20">Verified Local</span>
-                            <span class="text-xs text-slate-500">Just Now</span>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 text-slate-100">Downtown Social Companion & Dating</h3>
-                        <p class="text-slate-400 text-sm mb-4">Looking to meet friendly locals for casual outings, coffee dates, and evening company in the city center...</p>
-                    </div>
-                    <button class="w-full bg-slate-800 hover:bg-rose-600 text-slate-200 hover:text-white text-sm font-medium py-2 rounded-lg transition">Connect Now</button>
-                </article>
+        <div class="category">
+            <h3>Personals & Dating</h3>
+            <p>Connect with local singles, companions, and personal classified ads in your city.</p>
+        </div>
 
-                <!-- Post Card 2 -->
-                <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-rose-500/50 transition">
-                    <div>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="bg-rose-500/10 text-rose-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-rose-500/20">Active Now</span>
-                            <span class="text-xs text-slate-500">15m ago</span>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 text-slate-100">Late Night Escort & Personal Listing</h3>
-                        <p class="text-slate-400 text-sm mb-4">Independent profile for discreet adult encounters, nightlife companionship, and unforgettable conversations...</p>
-                    </div>
-                    <button class="w-full bg-slate-800 hover:bg-rose-600 text-slate-200 hover:text-white text-sm font-medium py-2 rounded-lg transition">Connect Now</button>
-                </article>
+        <div class="category">
+            <h3>Women Seeking Men</h3>
+            <p>Explore independent local profiles and personal ads updated daily.</p>
+        </div>
 
-                <!-- Post Card 3 -->
-                <article class="bg-slate-900 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-rose-500/50 transition">
-                    <div>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="bg-rose-500/10 text-rose-400 text-xs font-semibold px-2.5 py-1 rounded-full border border-rose-500/20">New Profile</span>
-                            <span class="text-xs text-slate-500">1h ago</span>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 text-slate-100">VIP Independent Companion</h3>
-                        <p class="text-slate-400 text-sm mb-4">Sophisticated personal ads from verified adults seeking genuine local dates, dinner companions, and friendly chats...</p>
-                    </div>
-                    <button class="w-full bg-slate-800 hover:bg-rose-600 text-slate-200 hover:text-white text-sm font-medium py-2 rounded-lg transition">Connect Now</button>
-                </article>
-            </div>
-        </section>
+        <div class="category">
+            <h3>Local Services</h3>
+            <p>Find secure, verified, and direct local connections easily.</p>
+        </div>
+    </div>
 
-        <!-- Information / SEO text block -->
-        <section id="about" class="max-w-4xl mx-auto px-4 py-12 text-slate-400 text-sm leading-relaxed text-center">
-            <h2 class="text-xl font-bold text-slate-200 mb-4">About Funxcum.com</h2>
-            <p>Funxcum.com is designed for mature adults looking to browse local profiles, adult dating options, and personal companionship listings in your region. Ensure all interactions comply with local laws and regulations before connecting with anyone online.</p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="border-t border-slate-900 bg-slate-900/40 py-6 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Funxcum.com. All rights reserved. 18+ Adult Content Only.</p>
+    <footer>
+        &copy; 2026 Funxcum.com. All rights reserved.
     </footer>
 
 </body>
